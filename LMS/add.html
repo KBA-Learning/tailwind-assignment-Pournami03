@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS - Add Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;"
+    class="min-h-screen flex items-center justify-center bg-white-50 bg-opacity-70">
+
+    <!-- Navbar -->
+    <div class="absolute top-0 right-0 p-4">
+        <nav class="text-white space-x-6">
+            <a href="home.html" class="hover:text-orange-400 transition duration-300">Home</a>
+            <a href="add.html" class="hover:text-orange-400 transition duration-300">Add book</a>
+            <a href="view.html" class="hover:text-orange-400 transition duration-300">View book</a>
+            <a href="signup.html" class="hover:text-orange-400 transition duration-300">Signup</a>
+        </nav>
+    </div>
+
+    <!-- Form Container -->
+    <div class="bg-purple-400 bg-opacity-80 p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h1 class="text-4xl text-center text-white font-bold mb-8">Add Book</h1>
+        
+        <form class="space-y-6">
+            <!-- Book Id -->
+            <div>
+                <label for="bookId" class="block text-white">Book Id:</label>
+                <input type="text" id="bookId" placeholder="Enter the book Id" required 
+                class="w-full mt-1 p-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+            </div>
+
+            <!-- Book Name -->
+            <div>
+                <label for="bookName" class="block text-white">Book Name:</label>
+                <input type="text" id="bookName" placeholder="Enter the Book name" required 
+                class="w-full mt-1 p-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+            </div>
+
+            <!-- Book Type -->
+            <div>
+                <label for="bookType" class="block text-white">Book Type:</label>
+                <select id="bookType" required 
+                class="w-full mt-1 p-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+                    <option>Fiction</option>
+                    <option>Non-Fiction</option>
+                    <option>Academic</option>
+                    <option>Children's Books</option>
+                    <option>Comics and Graphic Novels</option>
+                    <option>Poetry</option>
+                    <option>Art and Photography</option>
+                    <option>DIY and Craft</option>
+                    <option>Travel Guides</option>
+                    <option>Health and Wellness</option>
+                    <option>Religious and Spiritual</option>
+                    <option>Cookbooks</option>
+                </select>
+            </div>
+
+            <!-- Author's Name -->
+            <div>
+                <label for="authorName" class="block text-white">Author's Name:</label>
+                <input type="text" id="authorName" placeholder="Enter the Author's name" required 
+                class="w-full mt-1 p-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+            </div>
+
+            <!-- Publisher's Name -->
+            <div>
+                <label for="publisherName" class="block text-white">Publisher's Name:</label>
+                <input type="text" id="publisherName" placeholder="Enter the Publisher's name" required 
+                class="w-full mt-1 p-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+            </div>
+
+            <!-- Date of Publication -->
+            <div>
+                <label for="publicationDate" class="block text-white">Date of Publication:</label>
+                <input type="date" id="publicationDate" required 
+                class="w-full mt-1 p-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+            </div>
+
+            <!-- ISBN -->
+            <div>
+                <label for="isbn" class="block text-white">ISBN:</label>
+                <input type="text" id="isbn" placeholder="Enter the ISBN no" required 
+                class="w-full mt-1 p-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+            </div>
+
+            <!-- Language -->
+            <div>
+                <label for="language" class="block text-white">Language:</label>
+                <select id="language" required 
+                class="w-full mt-1 p-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+                    <option>Malayalam</option>
+                    <option>English</option>
+                </select>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex justify-between">
+                <button type="submit" class="text-white px-4 py-2 rounded-md bg-indigo-600 hover:bg-indigo-400 transition duration-300">
+                    Add
+                </button>
+                <button type="reset" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-400 transition duration-300">
+                    Reset
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
